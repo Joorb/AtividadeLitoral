@@ -1,5 +1,16 @@
 <h1>Marítimo Sampa</h1>
-<br>
+
 <h2>João Roberto Piccolo Santos e Pedro Henrique Almeida de Souza</h2>
+
+<h3>Nosso objetivo é destacar as cidades com maior volume de exportação no litoral de São Paulo, fornecendo aos usuários informações sobre como essas cidades alcançaram essa posição e qual é o principal produto exportado por cada uma delas.</h3>
+
 <br>
-<h3>Nesta aplicação iremos mostrar as cidades do litoral de São Paulo-SP com maiores taxas de importações e exportações com o objetivo de exibir para os usuários que acessarem, sejam eles habitantes ou não de alguma das cidades que será exibida, possam ter uma noção de como isso influenciou na economia e no desenvolvimento da cidade ao decorrer dos anos. Também será mostrado dados e estatísticas dessas taxas para uma maior compreensão dessa influência.</h3>
+
+<h2>Home da Wiki</h2>
+https://github.com/Joorb/AtividadeLitoral/wiki
+
+<h2>Telas</h2>
+https://github.com/Joorb/AtividadeLitoral/wiki/Descriçao-dos-widgets-presentes-no-site
+
+<h2>Descrição dos Widgets Presentes no Site</h2>
+https://github.com/Joorb/AtividadeLitoral/wiki/Telas
