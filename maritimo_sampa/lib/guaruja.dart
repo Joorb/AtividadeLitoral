@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:maritimo_sampa/guaruja.dart';
 import 'package:maritimo_sampa/main.dart';
+import 'package:maritimo_sampa/santos.dart';
 
-class SegundaPag extends StatelessWidget {
-  const SegundaPag({super.key});
+class TercPag extends StatelessWidget {
+  const TercPag({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class SegundaPag extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: const Color.fromRGBO(40, 73, 91, 1),
           title: const Text(
-            'Santos',
+            'Guarujá',
             style: TextStyle(
               color: Color.fromRGBO(181, 218, 238, 1),
               fontSize: 40,
@@ -24,11 +24,11 @@ class SegundaPag extends StatelessWidget {
             IconButton(
               icon: const Icon(Icons.arrow_forward_rounded,
                   color: Color.fromRGBO(181, 218, 238, 1), size: 40),
-              onPressed: () { Navigator.push(context, MaterialPageRoute(builder:(context) => const TercPag()),);},
+              onPressed: () {},
             ),
           ],
           leading: IconButton(
-            onPressed: () {},
+            onPressed: () {  Navigator.push(context, MaterialPageRoute(builder:(context) => const SegundaPag()),);},
             icon: const Icon(Icons.arrow_back_rounded,
                 color: Color.fromRGBO(181, 218, 238, 1), size: 40),
           ),
@@ -72,7 +72,7 @@ class SegundaPag extends StatelessWidget {
                         ),
                         padding: const EdgeInsets.fromLTRB(8,8,8,0),
                         child: const Text(
-                          'Santos é uma cidade fundamental no cenário econômico não apenas de São Paulo, mas de todo o Brasil. Sua importância decorre principalmente do Porto de Santos, o maior da América Latina. A cidade é um ponto crucial para importação e',
+                          'Guarujá, localizado no litoral do estado de São Paulo, tem uma significativa influência na economia de exportação e importação do Brasil, principalmente devido à sua proximidade com o Porto de Santos, o maior porto da América Latina. Em resumo, Guarujá, através do Porto de ',
                            textAlign: TextAlign.justify,
                           style: TextStyle(
                             color: Color.fromRGBO(181, 218, 238, 1),
@@ -97,7 +97,7 @@ class SegundaPag extends StatelessWidget {
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(15.0),
                           child: Image.asset(
-                            'img/ils.jpg',
+                            'img/ilg.jpeg',
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -121,7 +121,7 @@ class SegundaPag extends StatelessWidget {
                   ),
                   padding: const EdgeInsets.fromLTRB(8,0,8,8),
                   child: const Text(
-                    'exportação, movimentando uma vasta gama de produtos, desde commodities agrícolas até produtos manufaturados. Sua localização estratégica e infraestrutura portuária de alto nível tornam-na um hub vital para o comércio internacional, influenciando diretamente a economia do país.',
+                    'Santos, desempenha um papel vital na economia de exportação e importação do Brasil, contribuindo significativamente para o comércio internacional, geração de empregos e desenvolvimento econômico regional.',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       color: Color.fromRGBO(181, 218, 238, 1),
@@ -149,7 +149,7 @@ class SegundaPag extends StatelessWidget {
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(15.0),
                           child: Image.asset(
-                            'img/s.jpeg',
+                            'img/g.jpg',
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -163,7 +163,7 @@ class SegundaPag extends StatelessWidget {
                         ),
                         padding: const EdgeInsets.all(8.0),
                         child: const Text(
-                          'A cidade de Santos tornou-se destaque nessas áreas pelos seguintes fatores: Localização Estratégica; Infraestrutura Portuária; Capacidade de Movimentação; Tecnologia e Logística; Política e Investimentos; Diversificação de Atividades',
+                          'Guarujá tornou-se um destaque no cenário de exportação e importação principalmente devido ao desenvolvimento e à modernização do Porto de Santos, que é uma infraestrutura fundamental para a logística e o comércio exterior do Brasil.',
                            textAlign: TextAlign.justify,
                           style: TextStyle(
                             color: Color.fromRGBO(181, 218, 238, 1),
@@ -187,7 +187,7 @@ class SegundaPag extends StatelessWidget {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(15.0),
                         child: Image.asset(
-                          'img/soja.jpg',
+                          'img/cafe.jpg',
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -200,7 +200,7 @@ class SegundaPag extends StatelessWidget {
                           borderRadius: BorderRadius.circular(15.0)),
                       padding: const EdgeInsets.all(8.0),
                       child: const Text(
-                        'A soja é essencialmente uma espécie autógama, ou seja, uma planta polinizada por ela mesma e não por outras plantas, mesmo que vizinhas a ela, com flores perfeitas e órgãos masculinos e femininos protegidos dentro da corola',
+                        'O café é uma das bebidas mais apreciadas em todo o planeta e é produzido dos grãos de café, a semente do fruto do cafeeiro. O cafeeiro é uma espécie originária da Etiópia que se difundiu por todo o mundo. ',
                         textAlign: TextAlign.justify,
                         style: TextStyle(
                           color: Color.fromRGBO(181, 218, 238, 1),

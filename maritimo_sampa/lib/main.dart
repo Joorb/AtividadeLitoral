@@ -1,9 +1,12 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:maritimo_sampa/guaruja.dart';
+import 'santos.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const MaterialApp (title: "App",
+      home:MainApp(),));
 }
 
 class MainApp extends StatelessWidget {
@@ -41,7 +44,7 @@ class MainApp extends StatelessWidget {
                 const SizedBox(height: 50),
                  
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {  Navigator.push(context, MaterialPageRoute(builder:(context) => const SegundaPag()),);},
                   child: Container(
                     width: 204,
                     height: 49,
@@ -64,7 +67,7 @@ class MainApp extends StatelessWidget {
                  const SizedBox(height: 50),
 
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () { Navigator.push(context, MaterialPageRoute(builder:(context) => const TercPag()),);},
                   child: Container(
                     width: 204,
                     height: 49,
@@ -129,8 +132,6 @@ class MainApp extends StatelessWidget {
                    ),
                   ),
                 ),
-
-                
               ],
             ),
           ),
