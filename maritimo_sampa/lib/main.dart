@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:maritimo_sampa/praia.dart'; // Certifique-se de que a importação está correta
+import 'package:maritimo_sampa/praia.dart';
 
 void main() {
   runApp(const MaterialApp(title: "App", home: MainApp()));
@@ -25,11 +25,11 @@ class MainApp extends StatelessWidget {
         child: SingleChildScrollView(
           child: Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center, // Alinhamento central
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                const SizedBox(height: 30), // Espaço superior
+                const SizedBox(height: 30),
                 Image.asset('assets/img/AA.png', width: 200, height: 300),
-                const SizedBox(height: 20), // Espaço inferior da imagem
+                const SizedBox(height: 20),
                 const Text(
                   'Agora a seguir mostraremos as cidades do Litoral de São Paulo (SP) com maiores taxas de Importação e Exportação',
                   style: TextStyle(
@@ -39,8 +39,7 @@ class MainApp extends StatelessWidget {
                   ),
                   textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 50), // Espaço antes dos botões
-                // Botão Santos
+                const SizedBox(height: 50),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 12),
                   child: TextButton(
@@ -72,7 +71,6 @@ class MainApp extends StatelessWidget {
                     ),
                   ),
                 ),
-                // Botão Guarujá
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 12),
                   child: TextButton(
@@ -104,7 +102,6 @@ class MainApp extends StatelessWidget {
                     ),
                   ),
                 ),
-                // Botão São Sebastião
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 12),
                   child: TextButton(
@@ -136,7 +133,6 @@ class MainApp extends StatelessWidget {
                     ),
                   ),
                 ),
-                // Botão Itanhaém
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 12),
                   child: TextButton(

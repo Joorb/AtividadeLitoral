@@ -91,7 +91,6 @@ class SegundaPag extends StatelessWidget {
       ),
     ];
 
-    // Seleciona os dados com base no índice fornecido
     final cidade = cidades[cidadeIndex];
     final historia = hist[cidadeIndex];
     final produto = prods[cidadeIndex];
@@ -192,8 +191,8 @@ class SegundaPag extends StatelessWidget {
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(15.0),
                           child: Image.asset(
-                            cidades[0].imgd,
-                            
+                            cidade.imgd,
+                            fit: BoxFit.cover,                            
                           ),
                         )
                       ),
