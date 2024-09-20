@@ -20,3 +20,6 @@ https://github.com/Joorb/AtividadeLitoral/wiki/Telas
 
 <h2>Desenvolvimento</h2>
 https://github.com/Joorb/AtividadeLitoral/wiki/Desenvolvimento
+
+<h2>Vídeo</h2>
+https://github.com/Joorb/AtividadeLitoral/wiki/Vídeo
