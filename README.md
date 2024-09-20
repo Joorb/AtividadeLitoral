@@ -22,4 +22,4 @@ https://github.com/Joorb/AtividadeLitoral/wiki/Telas
 https://github.com/Joorb/AtividadeLitoral/wiki/Desenvolvimento
 
 <h2>Vídeo</h2>
-https://github.com/Joorb/AtividadeLitoral/wiki/Vídeo
+https://github.com/Joorb/AtividadeLitoralASPNET/wiki/Código-e-Vídeo
