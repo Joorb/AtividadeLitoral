@@ -7,14 +7,16 @@ class Municipio {
   late String desc;
   late String desc2;
   late String imgd;
+  late String map;
 
-  Municipio({required String nomeInicial, required String regiaoInicial, required String populacaoInicial, required String descInicial, required String descInicial2, required String imgdInicial}){
+  Municipio({required String nomeInicial, required String regiaoInicial, required String populacaoInicial, required String descInicial, required String descInicial2, required String imgdInicial, required String mapInicial}){
     nome = nomeInicial;
     regiao = regiaoInicial;
     populacao = populacaoInicial;
     desc = descInicial;
     desc2 = descInicial2;
     imgd = imgdInicial;
+    map = mapInicial;
   }
 }
 

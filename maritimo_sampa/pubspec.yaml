@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  url_launcher: ^6.3.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -23,3 +23,5 @@ flutter:
     - assets/img/s.jpeg
     - assets/img/soja.jpg
     - assets/img/ilg.jpeg
+    
+    

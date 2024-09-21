@@ -2,11 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:maritimo_sampa/main.dart';
 import 'classes.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SegundaPag extends StatelessWidget {
   final int cidadeIndex;
 
   const SegundaPag({super.key, required this.cidadeIndex});
+
+void _launchURL(String url) async {
+  final Uri uri = Uri.parse(url);
+  if (await canLaunchUrl(uri)) {
+    await launchUrl(uri);
+  } else {
+    throw 'Não foi possível abrir o URL: $url';
+  }
+}
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +28,7 @@ class SegundaPag extends StatelessWidget {
         descInicial: 'Santos é uma cidade fundamental no cenário econômico não apenas de São Paulo, mas de todo o Brasil. Sua importância decorre principalmente do Porto de Santos, o maior da América Latina. A cidade é um ponto crucial para importação e',
         descInicial2: 'exportação, movimentando uma vasta gama de produtos, desde commodities agrícolas até produtos manufaturados. Sua localização estratégica e infraestrutura portuária de alto nível tornam-na um hub vital para o comércio internacional, influenciando diretamente a economia do país.',
         imgdInicial: 'img/ils.jpg',
+        mapInicial: 'https://maps.app.goo.gl/CrdsYb75rJt7uXQJ9',
       ),
       Municipio(
         nomeInicial: 'Guarujá',
@@ -26,6 +37,7 @@ class SegundaPag extends StatelessWidget {
         descInicial: 'Guarujá, localizado no litoral do estado de São Paulo, tem uma significativa influência na economia de exportação e importação do Brasil, principalmente devido à sua proximidade com o Porto de Santos, o maior porto da América Latina. Em resumo, Guarujá, através do Porto de ',
         descInicial2: 'Santos, desempenha um papel vital na economia de exportação e importação do Brasil, contribuindo significativamente para o comércio internacional, geração de empregos e desenvolvimento econômico regional.',
         imgdInicial: 'img/ilg.jpeg',
+        mapInicial: 'https://maps.app.goo.gl/akZQ6u5k2fJcLgjw8',
       ),
       Municipio(
         nomeInicial: 'São Sebastião',
@@ -34,6 +46,7 @@ class SegundaPag extends StatelessWidget {
         descInicial: 'São Sebastião, através do seu porto, tem uma influência significativa na economia de exportação e importação do Brasil, especialmente no setor de petróleo e produtos químicos. Embora não tão grande quanto o Porto de Santos, o Porto de São ',
         descInicial2: 'Sebastião desempenha um papel crucial em certos segmentos, contribuindo para a economia regional e nacional por meio da geração de empregos, arrecadação de receitas e apoio à infraestrutura local.',
         imgdInicial: 'img/ilssb.jpg',
+        mapInicial: 'https://maps.app.goo.gl/tqUi5A2CQESYuhz67',
       ),
       Municipio(
         nomeInicial: 'Itanhaém',
@@ -42,6 +55,7 @@ class SegundaPag extends StatelessWidget {
         descInicial: 'Itanhaém, apesar de não ser um grande centro de exportação e importação, tem uma influência indireta na economia regional graças à sua proximidade com o Porto de Santos e ao turismo local. A cidade pode explorar oportunidades para desenvolver sua ',
         descInicial2: 'infraestrutura logística e comercial, potencialmente aumentando sua participação no comércio exterior. Contudo, a falta de um porto comercial próprio limita a influência direta de Itanhaém na economia de exportação e importação do Brasil.',
         imgdInicial: 'img/ili.jpg',
+        mapInicial: 'https://maps.app.goo.gl/r56fcgZni7C1Aixz9',
       ),
     ];
 
@@ -138,15 +152,37 @@ class SegundaPag extends StatelessWidget {
           child: Column(
             children: [
               const SizedBox(height: 10),
-              Center(
-                child: IconButton(
-                  icon: const Icon(Icons.home_rounded,
-                      color: Color.fromRGBO(181, 218, 238, 1), size: 50),
-                  onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder:(context) => const MainApp()),);
-                  },
-                ),
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10.0),
+          child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              IconButton(
+                icon: const Icon(Icons.home_rounded,
+                color: Color.fromRGBO(181, 218, 238, 1), size: 50),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const MainApp()),
+                  );
+                },
               ),
+
+
+              const SizedBox(width: 20),
+
+
+              IconButton(
+                icon: const Icon(Icons.location_pin,
+                color: Color.fromRGBO(181, 218, 238, 1), size: 50),
+                onPressed:(){
+                  _launchURL(cidade.map);
+                }
+              ),
+            ],
+          ),
+        ),
+              
               const SizedBox(height: 10),
               Padding(
                 padding: const EdgeInsets.fromLTRB(16,0,16,0),

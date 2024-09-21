@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:maritimo_sampa/praia.dart';
 
 void main() {
-  runApp(const MaterialApp(title: "App", home: MainApp()));
+  runApp(const MaterialApp(title: "Marítimo Sampa", home: MainApp()));
 }
 
 class MainApp extends StatelessWidget {
